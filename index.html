@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CMDA Payment Report</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .container{
+        height: 100%;
+        width: 100%;
+    }
+
+input.number-to-text::-webkit-outer-spin-button,
+input.number-to-text::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number].number-to-text {
+    -moz-appearance: textfield;
+    
+}
+
+    .contentleft{
+        border-right: 1px solid #333;
+    }
+
+  
+    .chd{
+        padding-top:10px;
+    }
+    .header{
+        /* background-color: gainsboro; */
+        height: 30px;
+        /* padding-left: 10px; */
+        display: flex;
+	flex-direction: row;
+	align-items: center;
+        
+    }
+    .amt{
+        text-align: end;
+    }
+
+    .content{
+        
+        /* height: 40px; */
+        /* padding-top: 4px; */
+        display: flex;
+	flex-direction: row;
+	align-items: center;
+        
+    }
+
+    .table.no-border tr td, .table.no-border tr th {
+    border-width: 0;
+}
+    .topHd{
+        padding: 5px;
+    }
+</style>
+<body>
+
+<div class="container-fluid">
+    <!-- <div class="row">
+      <div class="col-sm-8 contentleft"> -->
+        <div class="container-fluid bg-primary topHd">File Details</div>
+        <div class="row container-fluid chd">  
+            <div class="col-sm-3">
+                <div class="header"><b>File No</b></div> 
+            </div>
+            <div class="col-sm-8">
+                <div class="mb-3 content">
+                    <input type="text" class="form-control" id="fileNo" placeholder="TEMP/CMDA/0224/2023" name="fileno">
+                  </div>
+            </div>
+            </div>
+            <div class="row container-fluid chd">  
+                <div class="col-sm-3">
+                    <div class="header"><b>Challan No</b></div> 
+                </div>
+                <div class="col-sm-8">
+                    <!-- <div class="mb-3 content">
+                        <input type="text" class="form-control" id="fileNo" placeholder="TEMP/CMDA/0224/2023" name="fileno">
+                      </div> -->
+                     <div class="mb-3 content">
+                        <select class="form-control form-select">
+                            <option style="padding: 5px;" value="1">CMDA/PP/Ch/8112/2023</option>
+                           
+                           
+                          </select>                     </div>
+                </div>
+                </div>
+            <div class="row container-fluid chd">  
+                <div class="col-sm-3">
+                    <div class="header"><b>Challan Type</b></div> 
+                </div>
+                <div class="col-sm-8">
+                    <div class="mb-3 content">Before Submission&nbsp;<font color="blue">View Details</font></div>
+
+                </div>
+                </div>
+            <div class="row container-fluid chd">  
+                <div class="col-sm-3">
+                    <div class="header"><b>Owner Name</b></div> 
+                </div>
+                <div class="col-sm-8">
+                    <div class="mb-3 content">Khushboo</div>
+                </div>
+                </div>
+            <div class="row container-fluid chd">  
+                <div class="col-sm-3">
+                    <div class="header"><b>Case Type</b></div> 
+                </div>
+                <div class="col-sm-8">
+                    <div class="mb-3 content">New</div>
+                </div>
+                </div>
+        
+                
+                <div class="chd container">
+                    <table class="table no-border">
+                       
+
+                        <tbody>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>
+                                    
+                                    <td>Challan(INR)</td>
+                                    <td>Penalty(INR)</td>
+                                    <td>Total(INR)</td>
+                                   
+                                </td>
+                               </tr>
+                           <tr >
+                            <td style="width: 25%;">Payable(INR)</td>
+                            <td >
+                               
+                                    
+                                    <td class="amt">3724.00</td>
+                                    <td class="amt">0.00</td>
+                                    <td class="amt">3724.00</td>
+                               
+                            </td>
+                           </tr>
+                           <tr>
+                            <td>Paid(INR)</td>
+                            <td>
+                               
+                                   
+                                    <td class="amt">0.00</td>
+                                    <td class="amt">0.00</td>
+                                    <td class="amt">0.00</td>
+                               
+                            </td>
+                           </tr>
+                           <tr>
+                            <td>Balance(INR)</td>
+                            <td>
+                               
+                                   
+                                <td><input type="number" class="number-to-text form-control" style="text-align: right;" class="form-control" id="email" placeholder="Penalty" value="0.00"></td>
+                                <td><input type="number" class="number-to-text form-control" style="text-align: right;" class="form-control" id="email" placeholder="Penalty" value="0.00"></td>
+                                <td><input type="number" class="number-to-text form-control" style="text-align: right;" class="form-control" id="email" placeholder="Penalty" value="0.00"></td>
+                                    
+                               
+                            </td>
+                           </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+          
+                
+        <!-- <div class="row chd container">
+           
+            <div class="col-sm-3">
+                <div class="header">File No</div>
+                <div class="header">Challan No</div>
+                <div class="header">Challan Type</div>
+                <div class="header">Owner Name</div>
+                <div class="header">Case Type</div>
+                <div class="header"></div>
+                <div class="header">Payable(INR)</div>
+                <div class="header">Paid(INR)</div>
+                <div class="header">Balance (INR)</div>
+            </div>
+            <div class="col-sm-8">
+                <div class="mb-3 content">
+                    <input type="text" class="form-control" id="fileNo" placeholder="TEMP/CMDA/0224/2023" name="fileno">
+                  </div>
+                  <div class="mb-3 content">
+                    <input type="text" class="form-control" id="fileNo" placeholder="TEMP/CMDA/0224/2023" name="fileno">
+                  </div>
+                  <div class="mb-3 content">Before Submission&nbsp;<font color="blue">View Details</font></div>
+                  <div class="mb-3 content">Khushboo</div>
+                  <div class="mb-3 content">New</div>
+                  <div class="container">
+                    <div class="row content">
+                        <div class="col-sm-2">Challan(INR)</div>
+                        <div class="col-sm-2">Penalty(INR)</div>
+                        <div class="col-sm-2">Total(INR)</div>
+                      </div>
+                      <div class="row content">
+                        <div class="col-sm-2 amt">3724.00</div>
+                        <div class="col-sm-2 amt">0.00</div>
+                        <div class="col-sm-2 amt">3724.00</div>
+                      </div>
+                      <div class="row content">
+                        <div class="col-sm-2 amt">0.00</div>
+                        <div class="col-sm-2 amt">0.00</div>
+                        <div class="col-sm-2 amt">0.00</div>
+                      </div>
+                      <div class="row content">
+                        <div class="col-sm-2 amt mb-3"><input type="number" class="number-to-text form-control" style="text-align: right;" class="form-control" id="email" placeholder="Challan" value="3724.00"></div>
+                        <div class="col-sm-2 amt"><input type="number" class="number-to-text form-control" style="text-align: right;" class="form-control" id="email" placeholder="Penalty" value="0.00"></div>
+                        <div class="col-sm-2 amt"><input type="number" class="number-to-text form-control" style="text-align: right;" class="form-control" id="email" placeholder="Total" value="3724.00"></div>
+                      </div>
+                  </div>
+            </div> -->
+       <!--  </div>
+        
+      </div> -->
+      
+      
+    
+  </div>
+  <br>
+  <br>
+  <div class="container">
+    <!-- <div class="col-sm-12"> -->
+        <div class="container-fluid bg-primary topHd">
+            Payment Option
+        </div>
+        <br>
+        <br>
+        <div class="container">
+            <table class="table table-bordered">
+                <tbody>
+                <tr>
+                    <td style="vertical-align: middle;">
+                        PayU
+                    </td>
+                    <td>
+                        <div class="radio">
+                            <label><input type="radio" name="optradio" checked>Internet Banking</label>
+                          </div>
+                          <div class="radio">
+                            <label><input type="radio" name="optradio">Credit Card</label>
+                          </div>
+                          <div class="radio disabled">
+                            <label><input type="radio" name="optradio" >Debit Card</label>
+                          </div>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td style="vertical-align: middle;">
+                        eCollect Slip for NEFT / RTGS
+                    </td>
+                    <td>
+                        <div class="radio">
+                            <label><input type="radio" name="optradio" >e-Payment Request Slip</label>
+                          </div>
+                         
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+       
+        <div class="text-center">
+            
+                <button type="button" class="btn">Pay</button>
+           
+        </div>
+       
+       
+        
+
+    <!-- </div> -->
+  </div>
+  <br>
+  <br>
+  <br>
+
+</body>
+</html>
