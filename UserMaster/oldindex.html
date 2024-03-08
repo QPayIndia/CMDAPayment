@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>User Master</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .container{
+        height: 100%;
+        width: 100%;
+    }
+
+input.number-to-text::-webkit-outer-spin-button,
+input.number-to-text::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number].number-to-text {
+    -moz-appearance: textfield;
+    
+}
+
+        .contentleft{
+            border-right: 1px solid #333;
+        }
+
+    
+        .chd{
+            padding-top:10px;
+        }
+        .header{
+            /* background-color: gainsboro; */
+            height: 30px;
+            /* padding-left: 10px; */
+            display: flex;
+        flex-direction: row;
+        align-items: center;
+            
+        }
+        .amt{
+            text-align: end;
+        }
+
+        .content{
+            
+            /* height: 40px; */
+            /* padding-top: 4px; */
+            display: flex;
+        flex-direction: row;
+        align-items: center;
+            
+        }
+
+        .table.no-border tr td, .table.no-border tr th {
+        border-width: 0;
+    }
+        .topHd{
+            padding: 5px;
+        }
+</style>
+<body>
+
+<div class="container-fluid">
+    <!-- <div class="row">
+      <div class="col-sm-8 contentleft"> -->
+        <div class="container-fluid bg-primary topHd">User Master</div>
+        <div class="row container-fluid chd">  
+            <div class="col-sm-3">
+                <div class="header"><b>Username</b></div> 
+            </div>
+            <div class="col-sm-8">
+                <div class="mb-3 content" style="width: 250px;">
+                    <input type="text" class="form-control" id="fileNo" placeholder="" name="fileno">
+                  </div>
+            </div>
+            </div>
+            <div class="row container-fluid chd">  
+                <div class="col-sm-3">
+                    <div class="header"><b>Password</b></div> 
+                </div>
+                <div class="col-sm-8">
+                    <div class="mb-3 content" style="width: 250px;">
+                        <input type="text" class="form-control" id="fileNo" placeholder="" name="fileno">
+                      </div>
+                </div>
+                </div>
+                <div class="row container-fluid chd">  
+                    <div class="col-sm-3">
+                        <div class="header"><b>Confirm Password</b></div> 
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="mb-3 content" style="width: 250px;">
+                            <input type="text" class="form-control" id="fileNo" placeholder="" name="fileno">
+                          </div>
+                    </div>
+                    </div>
+                    <div class="row container-fluid chd">  
+                        <div class="col-sm-3">
+                            <div class="header"><b>Role</b></div> 
+                        </div>
+                        <div style="display: flex; align-items: center;" class="col-sm-8">
+                            <div class="radio">
+                                <label><input type="radio" name="optradio" checked>Admin</label>
+                              </div>
+                              <div style="width: 50px;"></div>
+                              <div class="radio">
+                                <label><input type="radio" name="optradio">Accounts</label>
+                              </div>
+                        </div>
+                        </div>
+                        <div style="display: flex; margin-top: 10px;" class="container">
+                            <button type="button" class="btn-success" style="background-color: green; border-radius: 5px; border: 0px; width: 60px; padding: 5px;">Add</button>
+                            <div style="width: 30px;"></div>
+                       
+                            <button type="button" class="btn-danger" style="background-color: red; border-radius: 5px; border: 0px; width: 60px;">Cancel</button>
+                    
+                        </div>
+            
+    <!-- </div> -->
+  </div>
+  <br>
+  <br>
+  <br>
+
+</body>
+</html>
